@@ -1,5 +1,62 @@
-.logo {
-	background-color: #f7f7f7;
-	width: 50px;
-	height: 70px;
+//header
+
+.header__top {
+	display: flex;
+	justify-content: space-between;
+	.header__logo {
+		display: flex;
+		justify-content: space-between;
+		.logo {
+			display: block;
+			height: 100px;
+			width: 130px;
+			background-color: orange;
+		}
+	}
+	.header__right {
+		display: flex;
+		justify-content: space-between;
+		.search {
+			height: 20px;
+		}
+	}
+}
+
+.header__bottom {
+	.navigation {
+		position: relative;
+		.site-navigation {
+			box-sizing: border-box;
+			padding: 0 30px;
+			&__item {
+				list-style: none;
+				padding-bottom: 20px;
+				&:hover {
+					border-bottom: 1px solid orange;
+				}
+			}
+			&__link {
+				color: #1a1a1a;
+				text-decoration: none;
+			}
+		}
+	}
+}
+//carousel
+.owl-carousel {
+	.owl-nav {
+		.disabled {
+			display: none;
+		}
+		button.owl-next {
+			position: absolute;
+			top: 0px;
+			right: 0;
+		}
+		button.owl-prev {
+			position: absolute;
+			top: 0px;
+			left: 0;
+		}
+	}
 }

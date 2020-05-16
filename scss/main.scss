@@ -1,50 +1,69 @@
+@import "header";
+@import "card";
 .wrapper {
 	max-width: 1170px;
 	margin: 0 auto;
 	overflow: hidden;
 }
-.header__top {
+
+.content__container {
 	display: flex;
-	justify-content: space-between;
-	.header__logo {
+}
+
+.title {
+	font-size: 22px;
+}
+.news {
+	&-cards {
 		display: flex;
-		justify-content: space-between;
-		.logo {
-			display: block;
-			height: 100px;
-			width: 130px;
-			background-color: orange;
-		}
+		flex-wrap: wrap;
 	}
-	.header__right {
-		display: flex;
-		justify-content: space-between;
+	&__title {
+		display: inline;
+	}
+	&__link {
+		display: inline;
 	}
 }
 
-.header__bottom {
-	.navigation {
-		.site-navigation {
-			display: inline;
-			margin: 0 10px;
-			overflow: hidden;
-			text-overflow: clip;
-			white-space: nowrap;
-			&__item {
-				display: inline-block;
-				padding-bottom: 20px;
-				margin-left: -4px;
-				&:hover {
-					border-bottom: 1px solid orange;
-				}
-				&:first-child {
-					margin: 0;
-				}
-			}
-			&__link {
-				color: #1a1a1a;
-				padding: 0 25px;
-				text-decoration: none;
+.coment {
+	&__title {
+		display: inline;
+	}
+	&__content {
+		display: flex;
+		height: 300px;
+		width: 200px;
+		background-color: orange;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+	&__text {
+		color: white;
+		padding-bottom: 30px;
+	}
+	&__signature {
+		color: white;
+		padding-bottom: 20px;
+	}
+}
+.helpful {
+	&__title {
+	}
+	&-links {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		&__item {
+			padding: 10px 15px;
+			background-color: gray;
+			font-weight: 900;
+			margin-bottom: 15px;
+			text-decoration: none;
+			color: #1a1a1a;
+			text-align: center;
+			&:last-child {
+				margin-bottom: 0;
 			}
 		}
 	}
