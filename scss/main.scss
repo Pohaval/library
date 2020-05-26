@@ -1,5 +1,7 @@
-@import "header";
-@import "card";
+body {
+	font-family: "Arimo", sans-serif;
+	color: #1a1a1a;
+}
 .wrapper {
 	max-width: 1170px;
 	margin: 0 auto;
@@ -8,12 +10,19 @@
 
 .content__container {
 	display: flex;
+	justify-content: space-between;
 }
 
 .title {
 	font-size: 22px;
+	display: inline;
 }
+.link {
+	display: inline;
+}
+
 .news {
+	margin-right: 30px;
 	&-cards {
 		display: flex;
 		flex-wrap: wrap;
@@ -29,18 +38,32 @@
 .coment {
 	&__title {
 		display: inline;
+		box-sizing: border-box;
 	}
 	&__content {
+		position: relative;
 		display: flex;
-		height: 300px;
-		width: 200px;
+		height: 350px;
+		width: 250px;
 		background-color: orange;
 		flex-direction: column;
 		justify-content: flex-end;
+		padding: 0 15px;
 	}
 	&__text {
 		color: white;
 		padding-bottom: 30px;
+		&::before {
+			content: "";
+			width: 10px;
+			height: 10px;
+			display: block;
+			margin: 0 auto;
+			position: absolute;
+			background-color: white;
+			top: 80px;
+			right: 120px;
+		}
 	}
 	&__signature {
 		color: white;
@@ -48,7 +71,11 @@
 	}
 }
 .helpful {
+	padding: 20px 0;
 	&__title {
+		color: #1a1a1a;
+		padding-bottom: 20px;
+		display: block;
 	}
 	&-links {
 		display: flex;
@@ -68,3 +95,35 @@
 		}
 	}
 }
+.footer {
+	background-color: black;
+	color: white;
+	&__icons {
+		display: flex;
+		width: 200px;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+
+	&__adress {
+	}
+
+	&__spliter {
+		border-bottom: 1px solid white;
+		margin: 0 40px;
+	}
+
+	&__podpis {
+	}
+}
+.icon {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: blue;
+}
+
+@import "header";
+@import "card";
+@import "slider";
+@import "footer";

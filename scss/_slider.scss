@@ -1,0 +1,12 @@
+.book {
+	&__skin {
+		background-color: greenyellow;
+		display: block;
+		width: 100px;
+		height: 120px;
+	}
+	&__title {
+		font-weight: 900;
+		font-size: 15px;
+	}
+}

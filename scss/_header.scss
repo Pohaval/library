@@ -1,23 +1,57 @@
 //header
 
-.header__top {
+.header-top {
 	display: flex;
 	justify-content: space-between;
-	.header__logo {
+	.header-logo {
 		display: flex;
 		justify-content: space-between;
-		.logo {
+		&__image {
 			display: block;
 			height: 100px;
 			width: 130px;
 			background-color: orange;
 		}
+		.header-title {
+			margin-top: 30px;
+			&__title {
+				font-size: 28px;
+				font-weight: 700;
+			}
+			&__subtitle {
+				margin-top: 10px;
+				font-size: 12px;
+				color: #646464;
+			}
+		}
 	}
-	.header__right {
+	.header-right {
+		margin-top: 30px;
 		display: flex;
 		justify-content: space-between;
 		.search {
-			height: 20px;
+			box-sizing: border-box;
+			height: 35px;
+			width: 200px;
+			border-radius: 22px;
+			border: none;
+			background-color: #646464b7;
+			margin-right: 15px;
+		}
+		.btn {
+			box-sizing: border-box;
+			background-color: orange;
+			padding: 0 25px;
+			line-height: 35px;
+			text-align: center;
+			color: white;
+			height: 35px;
+			font-size: 16px;
+			border-radius: 22px;
+			span {
+				padding: 0 33px 0 0;
+				background: url("../image/") right no-repeat;
+			}
 		}
 	}
 }
@@ -25,12 +59,15 @@
 .header__bottom {
 	.navigation {
 		position: relative;
+
 		.site-navigation {
 			box-sizing: border-box;
 			padding: 0 30px;
+
 			&__item {
 				list-style: none;
 				padding-bottom: 20px;
+				margin-right: 40px;
 				&:hover {
 					border-bottom: 1px solid orange;
 				}

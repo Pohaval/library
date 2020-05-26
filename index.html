@@ -6,6 +6,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Научная библиотека</title>
+	<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.min.css">
 	<link href="css/owl.carousel.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/owl.theme.default.css">
@@ -15,19 +16,17 @@
 
 <body>
 	<div class="wrapper">
-		<header>
-			<div class="header__top">
-				<div class="header__logo">
-					<img class="logo" src="#" alt="logo">
-					<div class="logo__title">
-						<h1>Научная библиотека</h1>
-						<span>Около 5000 тыс. беспатных электронных книг</span>
+		<header class="header">
+			<div class="header-top">
+				<div class="header-logo">
+					<img class="header-logo__image" src="#" alt="logo">
+					<div class="header-title">
+						<h1 class="header-title__title">Научная библиотека</h1>
+						<p class="header-title__subtitle">Около 5000 тыс. беспатных электронных книг</p>
 					</div>
 				</div>
-				<div class="header__right">
-
-					<input class="search" type="text">
-
+				<div class="header-right">
+					<input class="search" type="text" value="Поиск...">
 					<div class="btn"><span>График работы</span></div>
 				</div>
 
@@ -35,7 +34,7 @@
 
 			<div class="header__bottom">
 				<nav class="navigation">
-					<ul class="site-navigation owl-carousel  slider-1">
+					<ul id="navslider" class="site-navigation owl-carousel slider-1 ">
 						<li class="site-navigation__item">
 							<a class="site-navigation__link" href="#"><span>О библеотеке</span></a>
 						</li>
@@ -166,27 +165,79 @@
 			</div>
 
 			<div class="slider">
-				<div class="slider__title tilte"></div>
-				<div class="slider__link link"></div>
-				<div class="slider-items">
-					<div class="slider-items__item"></div>
-				</div>
+				<div class="slider__title title">Новые поступления</div>
+				<div class="slider__link link">все поступления</div>
+				<ul id="bookslider" class="slider-items owl-carousel slider2">
+
+					<li class="slider-items__item book">
+						<div class="book__skin">12 </div>
+						<div class="book__title">Книга</div>
+						<div class="book__subtitle">10 34</div>
+					</li>
+					<li class="slider-items__item book">
+						<div class="book__skin">12 </div>
+						<div class="book__title">Книга</div>
+						<div class="book__subtitle">10 34</div>
+					</li>
+					<li class="slider-items__item book">
+						<div class="book__skin">12 </div>
+						<div class="book__title">Книга</div>
+						<div class="book__subtitle">10 34</div>
+					</li>
+					<li class="slider-items__item book">
+						<div class="book__skin">12 </div>
+						<div class="book__title">Книга</div>
+						<div class="book__subtitle">10 34</div>
+					</li>
+					<li class="slider-items__item book">
+						<div class="book__skin">12 </div>
+						<div class="book__title">Книга</div>
+						<div class="book__subtitle">10 34</div>
+					</li>
+					<li class="slider-items__item book">
+						<div class="book__skin">12 </div>
+						<div class="book__title">Книга</div>
+						<div class="book__subtitle">10 34</div>
+					</li>
+					<li class="slider-items__item book">
+						<div class="book__skin">12 </div>
+						<div class="book__title">Книга</div>
+						<div class="book__subtitle">10 34</div>
+					</li>
+					<div class="slider-items__item book">
+						<div class="book__skin">12 </div>
+						<div class="book__title">Книга</div>
+						<div class="book__subtitle">10 34</div>
+					</div>
+					<div class="slider-items__item book">
+						<div class="book__skin">12 </div>
+						<div class="book__title">Книга</div>
+						<div class="book__subtitle">10 34</div>
+					</div>
+					<div class="slider-items__item book">
+						<div class="book__skin">12 </div>
+						<div class="book__title">Книга</div>
+						<div class="book__subtitle">10 34</div>
+					</div>
+
+				</ul>
 			</div>
 
 		</div>
 
-		<footer class="footer">
-			<div class="footer__icons">
-				<img src="" alt="" class="icon">
-				<img src="" alt="" class="icon">
-				<img src="" alt="" class="icon">
-				<img src="" alt="" class="icon">
-			</div>
-			<div class="footer__adress"></div>
-			<div class="footer__spliter"></div>
-			<div class="footer__podpis"></div>
-		</footer>
+
 	</div>
+	<footer class="footer">
+		<div class="footer__icons">
+			<img src="" alt="" class="icon">
+			<img src="" alt="" class="icon">
+			<img src="" alt="" class="icon">
+			<img src="" alt="" class="icon">
+		</div>
+		<div class="footer__adress">какойто адрес</div>
+		<div class="footer__spliter"></div>
+		<div class="footer__podpis">какаято подпись</div>
+	</footer>
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
