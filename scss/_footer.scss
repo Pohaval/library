@@ -1,4 +1,29 @@
-footer {
-	margin: 0;
-	padding: 0;
+.footer {
+	background-color: $second-color;
+	color: white;
+	&__icons {
+		display: flex;
+		width: 200px;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+
+	&__adress {
+		text-align: center;
+	}
+
+	&__spliter {
+		border-bottom: 1px solid white;
+		margin: 0 40px;
+	}
+
+	&__podpis {
+		text-align: center;
+	}
+}
+.icon {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: blue;
 }

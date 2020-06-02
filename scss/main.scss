@@ -1,11 +1,48 @@
-body {
-	font-family: "Arimo", sans-serif;
-	color: #1a1a1a;
+@import "abstracts/variables";
+
+@import "header";
+@import "card";
+@import "slider";
+@import "footer";
+
+html {
+	font-family: segoe;
+	color: $font-color;
 }
+
 .wrapper {
 	max-width: 1170px;
 	margin: 0 auto;
 	overflow: hidden;
+}
+
+.fullpageimage {
+	background-image: url(../assets/img/books.jpg);
+	width: 100%;
+	height: 200px;
+	background-position: top 44% center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.title,
+.title1 {
+	font-size: 24px;
+	display: inline;
+	font-family: $title-font;
+}
+.title2 {
+	font-size: 18px;
+	display: inline;
+	font-family: $title-font;
+}
+.link {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: $first-color;
+	text-decoration: none;
 }
 
 .content__container {
@@ -13,39 +50,34 @@ body {
 	justify-content: space-between;
 }
 
-.title {
-	font-size: 22px;
-	display: inline;
-}
-.link {
-	display: inline;
-}
-
+/*main-contant*/
 .news {
-	margin-right: 30px;
 	&-cards {
 		display: flex;
 		flex-wrap: wrap;
+		margin-top: 15px;
 	}
 	&__title {
 		display: inline;
+		padding-left: 10px;
 	}
 	&__link {
 		display: inline;
 	}
 }
-
+/*right-side*/
 .coment {
 	&__title {
 		display: inline;
 		box-sizing: border-box;
 	}
 	&__content {
+		margin-top: 30px;
 		position: relative;
 		display: flex;
 		height: 350px;
-		width: 250px;
-		background-color: orange;
+		width: 260px;
+		background-color: $first-color;
 		flex-direction: column;
 		justify-content: flex-end;
 		padding: 0 15px;
@@ -95,35 +127,3 @@ body {
 		}
 	}
 }
-.footer {
-	background-color: black;
-	color: white;
-	&__icons {
-		display: flex;
-		width: 200px;
-		justify-content: space-between;
-		margin: 0 auto;
-	}
-
-	&__adress {
-	}
-
-	&__spliter {
-		border-bottom: 1px solid white;
-		margin: 0 40px;
-	}
-
-	&__podpis {
-	}
-}
-.icon {
-	display: block;
-	width: 30px;
-	height: 30px;
-	background-color: blue;
-}
-
-@import "header";
-@import "card";
-@import "slider";
-@import "footer";

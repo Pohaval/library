@@ -1,26 +1,52 @@
 .card {
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	border: 1px solid gray;
-	min-height: 300px;
-	width: 260px;
-	padding: 7px;
+	min-height: 350px;
+	width: 290px;
+	padding: 15px;
 	border-radius: 5px;
+	border: 1px solid white;
+	&:hover {
+		border: 1px solid gray;
+	}
 
 	&__img {
-		min-width: 100px;
-		min-height: 150px;
-		background-color: green;
+		height: 160px;
+		width: 260px;
+		background-image: url(../assets/img/book1.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 5px;
+		margin-bottom: 15px;
 	}
 	&__title {
-		font-size: 20px;
+		font-size: 26px;
+		margin-bottom: 15px;
+		&:hover {
+			color: $first-color;
+		}
 	}
 	&__text {
 		color: #1a1a1a;
+		margin-bottom: 20px;
 	}
 	&__bottom {
 		display: flex;
 		justify-content: space-between;
+	}
+	&__date {
+		line-height: 40px;
+	}
+	&__btn {
+		background-color: $second-color;
+		color: $font-color-white;
+		text-transform: capitalize;
+		padding: 0 20px;
+		line-height: 40px;
+		border-radius: 20px;
+		&:hover {
+			background-color: #21212167;
+		}
 	}
 }

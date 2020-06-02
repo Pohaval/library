@@ -1,5 +1,7 @@
 //header
-
+.header {
+	padding-top: 10px;
+}
 .header-top {
 	display: flex;
 	justify-content: space-between;
@@ -9,13 +11,12 @@
 		&__image {
 			display: block;
 			height: 100px;
-			width: 130px;
-			background-color: orange;
+			width: 150px;
 		}
 		.header-title {
-			margin-top: 30px;
+			margin: 25px 0 0 20px;
 			&__title {
-				font-size: 28px;
+				font-size: 30px;
 				font-weight: 700;
 			}
 			&__subtitle {
@@ -35,28 +36,33 @@
 			width: 200px;
 			border-radius: 22px;
 			border: none;
-			background-color: #646464b7;
+			background-color: #dddddd;
+			color: #646464;
 			margin-right: 15px;
+			padding-left: 20px;
 		}
 		.btn {
 			box-sizing: border-box;
-			background-color: orange;
+			background-color: $first-color;
 			padding: 0 25px;
 			line-height: 35px;
 			text-align: center;
 			color: white;
 			height: 35px;
-			font-size: 16px;
+			font-size: 14px;
 			border-radius: 22px;
+			min-width: 200px;
 			span {
 				padding: 0 33px 0 0;
-				background: url("../image/") right no-repeat;
+				background: url(../assets/img/icons/calendar.svg) right no-repeat;
+				background-size: 18px;
 			}
 		}
 	}
 }
 
 .header__bottom {
+	margin-top: 30px;
 	.navigation {
 		position: relative;
 
@@ -66,10 +72,11 @@
 
 			&__item {
 				list-style: none;
-				padding-bottom: 20px;
-				margin-right: 40px;
+				box-sizing: border-box;
+				padding: 0 10px 20px 10px;
+				border-bottom: 2px solid white;
 				&:hover {
-					border-bottom: 1px solid orange;
+					border-bottom: 2px solid $first-color;
 				}
 			}
 			&__link {

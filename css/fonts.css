@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "segoe";
+  src: url(../assets/fonts/segoe/SegoeUI.ttf);
+}
+
+@font-face {
+  font-family: "segoe-italic";
+  src: url(../assets/fonts/segoe/SegoeUI-Italic.ttf);
+}
+
+@font-face {
+  font-family: "helvetic";
+  src: url(../assets/fonts/helvetica/HelveticaNeueCyr-Medium.ttf);
+}
+
+@font-face {
+  font-family: "helvetica-medium-italic";
+  src: url(../assets/fonts/helvetica/HelveticaNeueCyr-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: "helvetica-bold";
+  src: url(../assets/fonts/helvetica/HelveticaNeueCyr-Bold.ttf);
+}
+
+@font-face {
+  font-family: "helvetica-bold-italic";
+  src: url(../assets/fonts/helvetica/HelveticaNeueCyr-BoldItalic.ttf);
+}

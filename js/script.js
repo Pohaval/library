@@ -6,16 +6,18 @@ $(document).ready(function () {
 	navslider.owlCarousel({
 		margin: 20,
 		nav: true,
-		autoWidth: 1,
-		navText: ["prev", "next"]//["<img src='img/arrow.png' width='15px'>", "<img src='img/arrow.png' width='15px'>"]
+		autoWidth: '1',
+		dots: false,
+		navText: ["<img src='assets/img/icons/left-arrow.svg' width='15px'>", "<img src='assets/img/icons/right-arrow.svg' width='15px'>"]
 	});
 	bookslider.owlCarousel({
-		margin: 20,
+		margin: 0,
 		items: 7,
 		nav: true,
 		loop: true,
+		dots: false,
 		smartspeed: 3000,
-		navText: ["prev", "next"]//["<img src='img/arrow.png' width='15px'>", "<img src='img/arrow.png' width='15px'>"]
+		navText: ["<img src='assets/img/icons/left-arrow.svg' width='15px'>", "<img src='assets/img/icons/right-arrow.svg' width='15px'>"]
 	});
 
 
