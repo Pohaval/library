@@ -87,20 +87,22 @@
 	}
 }
 //carousel
-.owl-carousel {
-	.owl-nav {
-		.disabled {
-			display: none;
-		}
-		button.owl-next {
-			position: absolute;
-			top: 0px;
-			right: 0;
-		}
-		button.owl-prev {
-			position: absolute;
-			top: 0px;
-			left: 0;
+.navigation {
+	.owl-carousel {
+		.owl-nav {
+			.disabled {
+				display: none;
+			}
+			button.owl-next {
+				position: absolute;
+				top: 0px;
+				right: 0;
+			}
+			button.owl-prev {
+				position: absolute;
+				top: 0px;
+				left: 0;
+			}
 		}
 	}
 }

@@ -6,10 +6,17 @@
 		width: 200px;
 		justify-content: space-between;
 		margin: 0 auto;
+		.icon {
+			padding: 30px 0;
+			display: block;
+			width: 30px;
+			height: 30px;
+		}
 	}
 
 	&__adress {
 		text-align: center;
+		padding-bottom: 20px;
 	}
 
 	&__spliter {
@@ -18,12 +25,7 @@
 	}
 
 	&__podpis {
+		padding: 20px;
 		text-align: center;
 	}
-}
-.icon {
-	display: block;
-	width: 30px;
-	height: 30px;
-	background-color: blue;
 }

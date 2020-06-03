@@ -26,7 +26,9 @@ html {
 	box-sizing: border-box;
 	margin-bottom: 20px;
 }
-
+b {
+	font-family: $title-font;
+}
 .title,
 .title1 {
 	font-size: 24px;
@@ -36,6 +38,10 @@ html {
 .title2 {
 	font-size: 18px;
 	display: inline;
+	font-family: $title-font;
+}
+.title3 {
+	font-size: 16px;
 	font-family: $title-font;
 }
 .link {
@@ -62,6 +68,7 @@ html {
 		padding-left: 10px;
 	}
 	&__link {
+		margin-left: 15px;
 		display: inline;
 	}
 }
@@ -72,10 +79,11 @@ html {
 		box-sizing: border-box;
 	}
 	&__content {
+		box-sizing: border-box;
 		margin-top: 30px;
 		position: relative;
 		display: flex;
-		height: 350px;
+		height: 365px;
 		width: 260px;
 		background-color: $first-color;
 		flex-direction: column;
@@ -84,29 +92,34 @@ html {
 	}
 	&__text {
 		color: white;
-		padding-bottom: 30px;
+		padding-bottom: 80px;
+		font-size: 20px;
+		letter-spacing: -1px;
+		word-spacing: 2px;
 		&::before {
 			content: "";
-			width: 10px;
-			height: 10px;
+			width: 120px;
+			height: 100px;
 			display: block;
 			margin: 0 auto;
 			position: absolute;
-			background-color: white;
-			top: 80px;
-			right: 120px;
+			background-image: url(../assets/img/cav.png);
+			top: 20px;
+			right: 80px;
 		}
 	}
 	&__signature {
 		color: white;
-		padding-bottom: 20px;
+		padding-bottom: 40px;
+		font-family: $title-font;
+		text-align: center;
 	}
 }
 .helpful {
-	padding: 20px 0;
+	padding-top: 30px;
 	&__title {
 		color: #1a1a1a;
-		padding-bottom: 20px;
+		padding-bottom: 30px;
 		display: block;
 	}
 	&-links {
@@ -114,15 +127,64 @@ html {
 		flex-direction: column;
 		justify-content: space-between;
 		&__item {
-			padding: 10px 15px;
 			background-color: gray;
 			font-weight: 900;
-			margin-bottom: 15px;
+			margin-bottom: 10px;
 			text-decoration: none;
 			color: #1a1a1a;
 			text-align: center;
+
+			padding: 0 20px;
+			line-height: 50px;
+
 			&:last-child {
 				margin-bottom: 0;
+			}
+		}
+	}
+}
+.slider {
+	margin: 30px 0 60px 0;
+	&__title {
+		display: inline;
+		padding-left: 10px;
+	}
+	&__link {
+		display: inline;
+		margin-left: 15px;
+	}
+	&-items {
+		margin-top: 30px;
+	}
+}
+//carousel
+.slider {
+	.owl-carousel {
+		.owl-nav {
+			.disabled {
+				display: none;
+			}
+			button.owl-next {
+				position: absolute;
+				top: 33%;
+				right: 0;
+				background-color: white;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+			}
+			button.owl-prev {
+				text-align: center;
+				position: absolute;
+				top: 33%;
+				left: 0;
+				background-color: white;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				&:active {
+					border: none;
+				}
 			}
 		}
 	}

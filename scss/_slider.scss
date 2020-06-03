@@ -2,11 +2,16 @@
 	&__skin {
 		background-color: greenyellow;
 		display: block;
-		width: 100px;
-		height: 120px;
+		width: 130px;
+		height: 150px;
 	}
 	&__title {
 		font-weight: 900;
 		font-size: 15px;
+	}
+	&__subtitle {
+		font-size: 12px;
+		color: $btn-color-active;
+		font-family: $helvetica-m;
 	}
 }
